@@ -1,55 +1,39 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Object Detection Portfolio</title>
-    <!-- Using Bootstrap for basic styling -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
-    <!-- Simple inline styles -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
     <style>
-        body {
-            padding: 20px;
-            background: #f8f9fa;
-        }
-        .video-container {
-            background: black; /* Black background for video */
-            border-radius: 8px;
-            margin: 20px 0;
-            overflow: hidden;
-        }
-        video {
-            width: 100%;
-            display: block; /* Removes bottom margin gap */
-        }
+        body { font-family: Arial, sans-serif; margin: 40px; background-color: #f4f4f4; }
+        .container { max-width: 800px; margin: auto; background: white; padding: 20px; border-radius: 10px; }
+        h1, h2 { color: #333; }
+        .project { margin-bottom: 20px; padding: 10px; border: 1px solid #ddd; border-radius: 5px; background: #fff; }
+        .project a { text-decoration: none; color: #0073e6; }
     </style>
 </head>
 <body>
     <div class="container">
-        <h1 class="text-center my-4">Pothole Detection Demo</h1>
+        <h1>My Portfolio</h1>
+        <p>Hello! I'm an AI/ML Engineer with a focus on Computer Vision and Object Detection.</p>
         
-        <div class="card shadow-sm">
-            <div class="card-body">
-                <h2>🚗 Real-time Pothole Detection</h2>
-                <p>A deep learning model that detects road defects in video streams.</p>
-                
-                <!-- Video with built-in black placeholder -->
-                <div class="video-container">
-                    <video controls style="background: black;">
-                        <source src="pothole_demo.mp4" type="video/mp4">
-                        Your browser doesn't support videos. 
-                        <a href="pothole_demo.mp4" download>Download the demo</a>.
-                    </video>
-                </div>
-                
-                <div class="mt-4">
-                    <h3>Technical Details</h3>
-                    <ul class="list-group">
-                        <li class="list-group-item"><strong>Model:</strong> YOLOv8</li>
-                        <li class="list-group-item"><strong>Framework:</strong> PyTorch</li>
-                        <li class="list-group-item"><strong>Dataset:</strong> Custom (1,200+ pothole images)</li>
-                    </ul>
-                </div>
-            </div>
+        <h2>Projects</h2>
+        <div class="project">
+            <h3>Pothole Detection System</h3>
+            <p>A deep learning model for detecting potholes in road images.</p>
+            <p><strong>Tech Stack:</strong> YOLOv8, OpenCV, Streamlit</p>
+            <p><a href="https://huggingface.co/yourproject" target="_blank">Live Demo</a> | <a href="https://github.com/yourrepo" target="_blank">GitHub</a></p>
         </div>
+        
+        <div class="project">
+            <h3>Another Project</h3>
+            <p>Description of another AI/ML project.</p>
+            <p><a href="#">Live Demo</a> | <a href="#">GitHub</a></p>
+        </div>
+        
+        <h2>Contact</h2>
+        <p>📧 Email: your.email@example.com</p>
+        <p>🔗 <a href="https://www.linkedin.com/in/yourprofile">LinkedIn</a></p>
     </div>
 </body>
 </html>
